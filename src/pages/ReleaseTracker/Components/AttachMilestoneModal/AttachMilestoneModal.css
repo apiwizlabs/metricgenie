@@ -1,0 +1,8 @@
+.add-tasks-modal-content > .modal-dialog {
+    width: 70%;
+}
+
+.add-tasks-modal-content > .modal-dialog  > .modal-content > .modal-body {
+    height: 25rem;
+    overflow-y: auto;
+}

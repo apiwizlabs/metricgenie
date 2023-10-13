@@ -1,0 +1,146 @@
+.new-sprint__container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 0.75s ease-in-out;
+  transform: translateX(100%);
+}
+
+.show {
+  transform: translateX(0);
+  backdrop-filter: blur(2px);
+}
+
+.new-sprint-modal__container {
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  box-shadow: -10px 0 20px -5px #6262623a;
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.new-sprint-modal-input__container {
+  height: 90%;
+  overflow-y: auto;
+}
+
+.input-group__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.new-sprint-modal-title {
+  font-size: 1.5rem;
+}
+
+.input-group__container > .modal-input-label > span {
+  color: #cd6464;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.input-group__container > .modal-input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: 1px solid transparent;
+  border: 1px solid #b6b4b4;
+  width: 75%;
+  color: #4e4e4edc;
+  letter-spacing: 1px;
+  transition: 0.25s ease;
+}
+
+.modal-input-error {
+  border: 1px solid #cd6464 !important;
+}
+
+.input-group__container > .modal-textarea {
+  padding: 0.5rem;
+  height: 5rem;
+  resize: none;
+  border-radius: 0.25rem;
+  outline: 1px solid transparent;
+  border: 1px solid #b6b4b4;
+  width: 75%;
+  color: #4e4e4edc;
+  letter-spacing: 1px;
+}
+
+.input-group__container > .radio-input-group__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.input-group__container > .radio-input-group__container > .radio-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new-sprint-modal-action-btn__container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #80808077;
+}
+
+.modal-date-input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 37%;
+}
+
+.modal-date-input__container > .modal-input-label > span {
+  color: #cd6464;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.modal-date-input__container > .modal-date-input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: 1px solid transparent;
+  border: 1px solid #b6b4b4;
+  width: 75%;
+  color: #4e4e4edc;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  outline: 1px solid transparent;
+  border: 1px solid grey;
+  border-radius: 0.25rem;
+  background-color: transparent;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn-secondary {
+  border-color: #2792d9;
+  border-width: 2px;
+}
+
+.btn-primary {
+  background-color: #2792d9;
+  border: none;
+  color: #fff;
+}

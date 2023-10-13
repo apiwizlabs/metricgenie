@@ -1,0 +1,52 @@
+.homepage-2 {
+  display: flex;
+  align-items: center;
+
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100vw;
+
+  background-color: #f1f8ff;
+}
+
+.homepage {
+  display: flex;
+  height: 100vh;
+}
+
+.tabs-container {
+  margin-bottom: 0.5rem;
+  box-shadow: 0 10px 10px -5px #7da0ac87;
+  position: relative;
+}
+
+.tabs-container .tab-btn {
+  background-color: #7da0ac87;
+  border: 1px transparent;
+
+  padding: 0.5rem;
+}
+
+.tabs-container .tab-btn:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.tabs-container .active-tab-btn {
+  background-color: #7da0ac;
+}
+
+.tabs-container > .user-profile__container {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.user-profile__container > .user-image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,67 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+.card-container {
+  background-color: white;
+  border-radius: 10px;
+  margin: 1rem 0.5rem;
+  width: 20%;
+
+  display: flex;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+.card-icon {
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.card-value {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.card-display {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.dropdown-workspace {
+  background-color: #f1f8ff;
+  border: none;
+  color: black;
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-workspace::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+
+.workspace-name-selector {
+  position: fixed;
+  top: 0rem;
+  right: 1rem;
+  width: max-content;
+  z-index: 10;
+}
+
+.workspace-names-container {
+  height: 15rem;
+  overflow-y: auto;
+}
+

@@ -1,0 +1,20 @@
+.workspace-container{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+.thead-container {
+  background-color: #e0ecff;
+}
+
+.action-btn {
+  cursor: pointer;
+}
+
+.growth-data__container {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 1rem;
+}

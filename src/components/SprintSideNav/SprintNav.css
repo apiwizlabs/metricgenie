@@ -1,0 +1,131 @@
+.sprint-nav {
+    padding: 0.5rem;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.milestone-details-container > .milestone-filter > .show > .dropdown-menu {
+    transform: translate(0) !important;
+}
+
+.milestone-filter > .dropdown , .sprint-nav > .dropdown {
+    width: 100%;
+    height: max-content;
+    background-color: inherit;
+    border: none;
+    position: relative;
+}
+
+.milestone-filter > .show > .dropdown-menu, .sprint-nav > .show > .dropdown-menu {
+    min-width: 12rem;
+    width: max-content;
+    height: max-content;
+    right: 0 !important;
+    top: 2rem !important;
+    transform: translate(50%, 5%) !important;
+    padding: 0.5rem;
+}
+
+.milestone-filter > .dropdown > .filter-icon, .sprint-nav > .dropdown > .filter-icon {
+    display: block;
+    margin-left: auto;
+}
+
+.sprint-nav-search {
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 15px -5px #cfcfcf;
+    outline: none;
+    transition: 0.25s ease-in;
+    width: 100%;
+}
+
+.sprint-nav-search:focus {
+    box-shadow: 0 0 0 2px #bdbcbc;
+}
+
+.all-sprints__container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    font-size: 0.8rem;
+}
+
+.sprint-title {
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #f5f8f9;
+}
+
+.sprint-name__container {
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+.active-sprint {
+    background-color: #c3c1c1;
+    color: #5a5a5a;
+    border: none;
+}
+
+.sprint-name__container > .sprint-status-label {
+    padding: 0.15rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #5b86cb;
+    color: #5b86cb;
+    width: max-content;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.sprint-name__container > .sprint-status-label.active {
+    color: #19963c;
+    border-color: #5b976c;
+}
+
+.sprint-name__container > .sprint-status-label.inactive {
+    color: #961f19;
+    border-color: #975b5b ;
+}
+
+.new-sprint-btn__container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.new-sprint-btn {
+    padding: 0.5rem 1rem;
+    outline: 1px solid transparent;
+    border: none;
+    box-shadow: 0 10px 15px -10px #959494;
+    border-radius: 100%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.sprint-nav > .home-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.filter-icon {
+    width: 2rem;
+    height: 1.5rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.current-filter {
+    font-size: 0.8rem;
+    color: #5a5a5a;
+}
