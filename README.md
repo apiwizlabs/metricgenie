@@ -63,5 +63,5 @@ Join our growing community! Checkout out our official [Blog](https://www.apiwiz.
 
 ## Thanks to all Contributors 🙏🏼
 <a href="https://github.com/apiwizlabs/metricgenie/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=apiwizlabs/metricgenie&max=400&columns=20" />
-<a>
+  <img src="https://contrib.rocks/image?repo=apiwizlabs/metricgenie" />
+</a>
