@@ -8,7 +8,6 @@ const routeNotFoundHandlers = require("./middlewares/routeNotFoundHandler");
 const connectToDb = require("./db/db.connect");
 const { normalizePort } = require("./helpers");
 const { checkAuthentication } = require("./middlewares/authentication");
-const workspaceRoute = require("./routes/workspace.router");
 const userRoute = require("./routes/users.router");
 const downloadsRoute = require("./routes/downloads.router");
 const activityRoute = require("./routes/activity.router");
@@ -81,7 +80,6 @@ app.get("/logout", (req, res) => {
 
 // use all routes here
 app.use("/login", loginRoute);
-app.use("/workspace", workspaceRoute);
 app.use("/users", userRoute);
 app.use("/downloads", downloadsRoute);
 app.use("/activity/workspace", activityRoute);
@@ -103,6 +101,5 @@ app.use(errorhandler);
 const PORT = normalizePort(config.PORT || "3001");
 
 app.listen(PORT, async () => {
-  let db = await connectToDb("apiwiz");
   logger.info(`Server connected successfully on PORT: ${PORT}`);
 });

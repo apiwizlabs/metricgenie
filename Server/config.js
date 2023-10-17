@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
     DB_URL: process.env.DB_URL, // take from env
     SPRINT_DB_URL: process.env.SPRINT_DB_URL,
